@@ -1,0 +1,32 @@
+{
+  "name": "GlobalNewsRSS",
+  "version": "0.1.0",
+  "description": "Searchable news feed from multiple sources.",
+  "author": "Justin Formentin",
+  "homepage": "https://knoat.com/",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:justinformentin/global-news-rss"
+  },
+  "dependencies": {
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "predeploy": "npm run build ",
+    "deploy": "gh-pages -d build",
+    "start": "concurrently \"npm run start-react\" \"npm run watch-css\"",
+    "start-react": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "build-css": "node-sass-chokidar ./src/sass/app.scss ./src/app.css",
+    "watch-css": "npm run build-css -- --watch -- --recursive"
+  },
+  "devDependencies": {
+    "concurrently": "^3.6.0",
+    "gh-pages": "^1.2.0",
+    "node-sass-chokidar": "^1.3.0"
+  }
+}
