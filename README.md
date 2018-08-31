@@ -1,6 +1,6 @@
 # News Feed App
 
-A simple news app. Connect to multiple sources, search by headline or category, and change the language. Built with React and uses [News API](https://newsapi.org/).
+A simple news app. Connect to multiple sources, search by headline or category, and change the language. Built with React and uses [News Api](https://newsapi.org/).
 
 
 ![Screen shot](knoat.jpg)

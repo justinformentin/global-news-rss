@@ -1,9 +1,9 @@
 import React, { Component, Fragment } from "react";
-import Articles from "./components/Articles";
-import SourcesComponent from "./filters/SourcesComponent";
-import HeaderComponent from "./header/HeaderComponent";
-import Sidebar from "./layouts/Sidebar";
-import LoaderComponent from "./components/LoaderComponent";
+import Feed from "./components/Article/Feed";
+import Sources from "./components/Header/Sources";
+import Header from "./components/Header/Header";
+import Sidebar from "./components/Nav/Sidebar";
+import Loader from "./components/Article/Loader";
 import Store from "./Store";
 class App extends Component {
     constructor(props) {
@@ -26,8 +26,8 @@ class App extends Component {
     render() {
         return (
             <Fragment>
-                {this.state.isLoading && <LoaderComponent />}
-                <HeaderComponent
+                {this.state.isLoading && <Loader />}
+                <Header
                     languages={this.state.languages}
                     countries={this.state.countries}
                     store={this.store}
@@ -38,8 +38,8 @@ class App extends Component {
                         categories={this.state.categories}
                     />
                     <main className="column-10 main columns">
-                        <Articles articles={this.state.articles} />
-                        <SourcesComponent
+                        <Feed articles={this.state.articles} />
+                        <Sources
                             store={this.store}
                             sources={this.state.sources}
                         />

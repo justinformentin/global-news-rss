@@ -202,7 +202,8 @@ main {
   text-overflow: ellipsis; }
 
 .article-image img {
-  max-width: 100%; }
+  max-width: 100%;
+  border: 2px solid #bbc6e1; }
 
 .article-links a {
   font-weight: 600;
