@@ -7,7 +7,7 @@ A simple news app. Connect to multiple sources, search by headline or category, 
 
 ## Demo
 
-[https://knoat.com](https://knoat.com/)
+[https://globalnews.netlify.com/](https://globalnews.netlify.com/)
 
 ## Usage
 
